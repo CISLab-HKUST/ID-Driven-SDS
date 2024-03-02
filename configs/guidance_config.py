@@ -1,0 +1,19 @@
+class GuidanceConfig:
+    image_encoder_path = "laion/CLIP-ViT-H-14-laion2B-s32B-b79K" # image encoder path
+    vae_model_path = "D:/programming/huggingface/cache/vae/sd-vae-ft-mse" #  VAE Model path
+    ip_ckpt = "" # IP-Adapter-FaceID-PlusV2 Model Path
+    fp16 = False
+    insightface_path = "" # insightface model path
+    base_model_path = "SG161222/Realistic_Vision_V4.0_noVAE" # Base Model Path
+    seed = 2023
+    vram_O = False
+    controlnet_path = None
+    min_range = 0.02
+    max_range = [0.5, 0.98]
+    anneal_timesteps = True
+    total_iteration = 1000
+    face_image_path = "./assets/woman.png"
+    scale = 1.0
+    s_scale = 1.0
+    shortcut = False
+    guidance_scale = 7.5
