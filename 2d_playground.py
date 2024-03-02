@@ -38,7 +38,7 @@ if __name__ == "__main__":
 
     skeleton_image = Image.open(skeleton_image_path).resize((512, 512), Image.Resampling.BILINEAR).convert("RGB")
     transf = transforms.ToTensor()
-    skeleton_img_tensor = transf(skeleton_image).unsqueeze(0)
+    skeleton_img_tensor = transf(skeleton_image).unsqueeze(0).repeat(batch_size, 1, 1, 1)
 
     img_tensor = torch.full((1, 3, 512, 512), 255).repeat(batch_size, 1, 1, 1)
     img_latents, _ = guidance.encode_imgs(img_tensor.to(torch.float32).to(device))
