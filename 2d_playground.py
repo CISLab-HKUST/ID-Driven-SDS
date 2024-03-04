@@ -1,12 +1,12 @@
 import torch
 import os
-from guidance.sd_utils import StableDiffusionIPAdapterGuidance
+from guidance.sd15_utils import StableDiffusionIPAdapterGuidance
 from torchvision import transforms
 from tqdm import tqdm
 from torch.optim import Adam
 from utils.images_to_video import imgs_to_video
 from PIL import Image
-from configs.guidance_config import GuidanceConfig
+from configs.guidance_config_sd15 import GuidanceConfig
 
 if __name__ == "__main__":
     device = torch.device("cuda:0")

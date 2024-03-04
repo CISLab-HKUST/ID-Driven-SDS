@@ -2,6 +2,12 @@
 
 This repo is based on [IP-Adapter](https://github.com/tencent-ailab/IP-Adapter/tree/main) and [DreamFusion](https://dreamfusion3d.github.io/). Thanks for their works.
 
+---
+
+## Update
+- [2024/03/05] :sweat_drops: Release face detection (Retinaface) and recognition (ArcFace) model with tensor input, but not useful for fine-graind datails.
+- [2024/03/03] :sweat_drops: Release SDS Loss with IP-Adapter-FaceID-PlusV2.
+
 ## INSTALL
 Please refer to [IP-Adapter](https://github.com/tencent-ailab/IP-Adapter/tree/main) and follow their guidance. If you have any problems with this repo, welcome to add an issue.
 
@@ -10,6 +16,14 @@ This implementation is based on the **special version** of IP-Adapter - `IP-Adap
 
 ## Models
 Some third-party models should be installed, here is the list.
+
+
+**Face Recognition Model:**
+```
+链接：https://pan.baidu.com/s/1b2EUPJ3t9n4_3EX91efEmQ 
+提取码：av25 
+--来自百度网盘超级会员V4的分享
+```
 
 **Base Model:**
 [Realistic_Vision_V4.0_noVAE](https://huggingface.co/SG161222/Realistic_Vision_V4.0_noVAE)
