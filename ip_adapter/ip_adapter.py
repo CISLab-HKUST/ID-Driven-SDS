@@ -342,10 +342,10 @@ class IPAdapterPlusXL(IPAdapter):
         return image_proj_model
 
     @torch.inference_mode()
-    def get_image_embeds(self, pil_image):
+    def get_image_embeds(self, pil_image, do_rescale=True):
         if isinstance(pil_image, Image.Image):
             pil_image = [pil_image]
-        clip_image = self.clip_image_processor(images=pil_image, return_tensors="pt").pixel_values
+        clip_image = self.clip_image_processor(images=pil_image, do_rescale=do_rescale, return_tensors="pt").pixel_values
         clip_image = clip_image.to(self.device, dtype=torch.float16)
         clip_image_embeds = self.image_encoder(clip_image, output_hidden_states=True).hidden_states[-2]
         image_prompt_embeds = self.image_proj_model(clip_image_embeds)

@@ -25,5 +25,5 @@ def get_lr(optimizer):
         return param_group['lr']
 
 def preprocess_input(image):
-    image -= np.array((104, 117, 123),np.float32)
+    image -= np.array((127.5, 127.5, 127.5),np.float32)
     return image
