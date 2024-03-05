@@ -1,11 +1,11 @@
 # Implementation of Score Distillation Sampling Loss with IP-Adapter
 
-This repo is based on [IP-Adapter](https://github.com/tencent-ailab/IP-Adapter/tree/main) and [DreamFusion](https://dreamfusion3d.github.io/). Thanks for their works.
+This repo is based on [IP-Adapter](https://github.com/tencent-ailab/IP-Adapter/tree/main) and [DreamFusion](https://dreamfusion3d.github.io/). Thanks for their work.
 
 ---
 
 ## Update
-- [2024/03/05] :sweat_drops: Release face detection (Retinaface) and recognition (ArcFace) model with tensor input, but not useful for fine-graind datails.
+- [2024/03/05] :sweat_drops: Release face detection (Retinaface) and recognition (ArcFace) model with tensor input, but not useful for fine-grained details. Maybe an image feature extraction model (Eg. DINO V2) should be added.
 - [2024/03/03] :sweat_drops: Release SDS Loss with IP-Adapter-FaceID-PlusV2.
 
 ## INSTALL
